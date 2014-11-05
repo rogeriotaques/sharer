@@ -1,0 +1,152 @@
+<!DOCTYPE html >
+
+<html lang="en">
+
+    <head>
+        <title>jQuery Sharer</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        
+        <meta name="description" content="Share your site and web-app on the 4 major social networking sites" >
+        <meta name="keywords" content="website,webapp,app,site,jquery,plugin,share,facebook,google plus,twitter,linkedin" >
+        
+        <!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="css/sample.css" >
+		<link rel="stylesheet" type="text/css" href="../src/sharer.css" />
+		
+    </head>
+    
+    <body>
+        
+        <header >
+            <div class="wrapper" >
+                <h1 class="step-4">Sharer Plugin, for jQuery</h1>
+
+                <p >
+                    Let other spread their love for your website or web-app. <br >
+                    Easy to embed, even easier to share! :)
+                </p>
+            </div>
+        </header>
+        
+        <section class="" >
+            
+            <div class="wrapper">
+
+                <p class="small-font">
+                    Open-source plugin under MIT license. Written by Rogério Taques. <br >
+                    Docs an other available at: <a href="https://github.com/rogeriotaques/sharer" >https://github.com/rogeriotaques/sharer</a>
+                </p> <br >
+                
+                <div class="well centered">
+                    
+                    <h4 >Spread your love and share this!</h4> <br >
+                
+                    <a class="sharer" data-media="facebook" href="">Facebook</a>
+                    <a class="sharer" data-media="google" href="">Google</a>
+                    <a class="sharer" data-media="twitter" data-shorten="true" data-title="#sharer is an impressive sharing plugin. Check it out! {URL}" href="">Twitter</a>
+                    <a class="sharer" data-media="linkedin" data-title="Impressive sharing plugin" data-summary="Check it out this impressive jQuery plugin to share sites and apps over SNS." href="">Linked-in</a>
+                    
+                    <br >
+                    
+                    <p >
+                        This is a live demo of this plugin. Enjoy.
+                    </p>
+                    
+                </div> <br >
+                
+                <h2 >Sharing on 4 major social networking sites</h2>
+                
+                <p >
+                    Easily share your sites and apps over Facebook, Google Plus, Twitter and Linked-in.
+                </p> <br >
+                
+                <h2 >Supports shorten URLs through out Goo.gl</h2>
+                
+                <p >
+                    Automatically shorten URLs to share it via Twitter. <br >
+                    You just need to mark it when URL should be shortened. <br >
+                    Accounts and API keys are not required, even though recommended.
+                </p> <br >
+                
+                <h2 >Easy, simple and quick to embed</h2>
+                
+                <p >
+                    Import libraries, call it via javascript and start sharing.
+                </p> <br >
+                
+                <h2 >Other nice stuff you should see</h2>
+                
+                <p >
+                    Have a look into other stuff I've made.
+                </p> 
+                
+                <dl >
+                    <dt >Valida</dt>
+                    <dd >
+                        A plugin which provides an easy, fast and lightweight way to make form validations on client-side. <br >
+                        Link: <a href="https://github.com/rogeriotaques/valida">https://github.com/rogeriotaques/valida</a>
+                    </dd>
+                    <dt >My tour</dt>
+                    <dd >
+                        A plugin that provides an easy and lightweight way to create an enjoyable virtual tour for your site. <br >
+                        Link: <a href="https://github.com/rogeriotaques/mytour">https://github.com/rogeriotaques/mytour</a>
+                    </dd>
+                    <dt >Minifyr</dt>
+                    <dd >
+                        A PHP script that minify and group CSS and JS scripts. <br >
+                        Link: <a href="https://github.com/rogeriotaques/minifyr">https://github.com/rogeriotaques/minifyr</a>
+                    </dd>
+                </dl>
+                
+                <p >
+                    Further, I recommend these apps:
+                </p> 
+                
+                <dl >
+                    <dt >Stuff In Bag</dt>
+                    <dd >
+                        A collaborative logistics platform created to connect travelers all over the world with people who want to 
+                        buy something from abroad, or from another region in the same country. <br >
+                        Link: <a href="http://stuffinbag.com/?ref=github">http://stuffinbag.com</a>
+                    </dd>
+                    <dt >Issuer.in</dt>
+                    <dd >
+                        A web-based online issuer tracker that you can use to get feedbacks or track issues of your projects. <br >
+                        Link: <a href="http://issuer.in/?ref=github">http://issuer.in</a>
+                    </dd>
+                </dl>
+                
+                <br >
+
+            </div>
+        
+        </section>
+    
+		<footer >
+            <div class="wrapper" >            
+                <p >&copy; 2014, Rogério Taques.</p>
+                <p >
+                    Take a look at my other stuffs: {
+                        <a href="http://code.google.com/p/jquery-valida">Web form validation</a> | 
+                        <a href="http://awin.com.br">Awin Technologies</a> | 
+                        <a href="http://stuffinbag.com">Stuff In Bag</a>
+                    }
+                </p>
+            </div>
+		</footer>
+		
+        <!-- SCRIPTS GOES HERE ... -->
+		
+		<script type="text/javascript" src="js/jquery.1.7.1.js"></script>
+		<script type="text/javascript" src="../src/sharer.1.0.0.js"></script>
+		
+		<script type="text/javascript" >
+			$(document).ready(function(){
+				$('.sharer').sharer();
+			});
+		</script>
+        
+    </body>
+    
+</html>

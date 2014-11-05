@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.sharer {
+	display: inline-block;
+	margin: 2px;
+}
+
+.sharer > .sharer-icon {
+	border-radius: 4px;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.sharer-icon.sharer-facebook {
+	background: url('social-icons.png') no-repeat -1px -1px;
+}
+
+.sharer-icon.sharer-google {
+	background: url('social-icons.png') no-repeat -35px -1px;
+}
+
+.sharer-icon.sharer-twitter {
+	background: url('social-icons.png') no-repeat -69px -1px;
+}
+
+.sharer-icon.sharer-linkedin {
+	background: url('social-icons.png') no-repeat -103px -1px;
+}
