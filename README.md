@@ -73,11 +73,64 @@ Open your HTML page (every page that sharing links should be available, or the t
 
 That's it! Now, if you run your page, you should see all 4 sharing buttons.
 
-## Options
+## Options 
 
 You can customize the behavior of *sharer* and it's highly recommended.
 
-The following options are available:
+The following options are available for anchor TAGs (```<a />```):
+
+### href : string
+
+Optional.
+
+If not given, *sharer* will consider that you're sharing the current URL. 
+
+You can use it to share any other page from the page where sharing button is.
+
+### data-media : string
+
+Required.
+
+Defines the media where page will be shared.
+
+Possible values are:
+
+* facebook
+* google
+* twitter
+* linkedin
+
+### data-shorten : boolean
+
+Optional.
+
+Defines whenever you want that a URL be shortened. 
+
+All given URLs will be shortened with [Goo.gl](http:goo.gl).
+
+### data-title : string
+
+Optional.
+
+Allows you to customize the text content that will be posted on Twitter or the title of your sharing on Linked-in. Text can be customized such as following example:
+
+```
+<a ... data-title="Anything you want here for #hashtag and {URL}" .. ></a>
+```
+
+In the above case, *sharer* will replace ```{URL}``` by given URL (shortened or not).
+
+This parameter is ignored by *Facebook* and *Google Plus*.
+
+### data-summary : string
+
+Optional. It's used exclusively by Linked-in.
+
+Allows you to customize the summary description of what content is being shared.
+
+This parameter is ignored by *Facebook*, *Google Plus* and *Twitter*.
+
+The following options are available for javascript call (``` $('.sharer').sharer(); ```):
 
 #### fb_app_id  : string
 
@@ -132,8 +185,6 @@ This callback throws 2 parameters:
 You can make use of this callback to perform any useful action after user clicks to share something.
 
 
-## Reporting bugs and suggestions
+## Questions, reporting bugs and suggestions
 
-You can use the [Github Issues Platform](https://github.com/rogeriotaques/sharer/issues) to report bugs or give your suggestons. Furthermore, all comments are welcome. ;)
-
-Happy coding.
+You can use the [Github Issues Platform](https://github.com/rogeriotaques/sharer/issues) to report bugs or give your suggestons. Furthermore, all comments are welcome. ;) Happy coding.
